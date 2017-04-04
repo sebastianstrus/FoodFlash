@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_shape" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_category_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/babyBlue"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:contentDescription="logo_top"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@mipmap/logo_top_small"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/add_category_editText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="@string/write_category_name"
+        android:maxLength="20"
+        android:layout_margin="20dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPageAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/save"
+        android:onClick="saveButtonPressed"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/info_chose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Swipe to choose the icon that you prefer"/>
+
+    <TextView
+        android:id="@+id/info_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/info_chose"
+        android:layout_alignLeft="@+id/info_chose"
+        android:layout_alignRight="@+id/info_chose"
+        android:padding="5dp"
+        android:text="You can delete a category or meal by swiping to the left in the list"/>
+    </RelativeLayout>
+
+</LinearLayout>

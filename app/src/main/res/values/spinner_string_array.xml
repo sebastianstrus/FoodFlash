@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_string_array">
+        <item>Kött</item>
+        <item>Fisk</item>
+        <item>Fågel</item>
+        <item>Vegetariskt</item>
+        <item>Pizza</item>
+        <item>Pasta</item>
+        <item>Efterrätt</item>
+        <item>Gröt</item>
+    </string-array>
+</resources>

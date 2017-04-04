@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shape" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/meallist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/babyBlue"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:contentDescription="logo_top"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@mipmap/logo_top_small"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/fragmentMealList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3.0sp"
+        android:layout_margin="4dp" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Add category", should appear as action button if possible -->
+    <item
+        android:id="@+id/add_category_item"
+        android:icon="@drawable/ic_add_white"
+        app:showAsAction="ifRoom"
+        android:title="@string/app_name" />
+</menu>
